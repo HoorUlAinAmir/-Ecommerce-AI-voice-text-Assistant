@@ -1,0 +1,511 @@
+{
+  "metrics": {
+    "totalCases": 25,
+    "intentAccuracy": 1,
+    "categorySlotAccuracy": 1,
+    "colorSlotAccuracy": 1,
+    "exactMatchAccuracy": 1
+  },
+  "evaluated": [
+    {
+      "text": "show me red shoes under 5000",
+      "intent": "search_product",
+      "category": "shoes",
+      "color": "red",
+      "predicted": {
+        "intent": "search_product",
+        "language": "english",
+        "slots": {
+          "category": "shoes",
+          "color": "red",
+          "quantity": 1,
+          "maxPrice": 5000
+        },
+        "normalized": "show me red shoes under 5000"
+      },
+      "intentCorrect": true,
+      "categoryCorrect": true,
+      "colorCorrect": true
+    },
+    {
+      "text": "find black headphones",
+      "intent": "search_product",
+      "category": "headphones",
+      "color": "black",
+      "predicted": {
+        "intent": "search_product",
+        "language": "english",
+        "slots": {
+          "category": "headphones",
+          "color": "black",
+          "quantity": 1,
+          "maxPrice": null
+        },
+        "normalized": "find black headphones"
+      },
+      "intentCorrect": true,
+      "categoryCorrect": true,
+      "colorCorrect": true
+    },
+    {
+      "text": "mujhe blue kurta dikhao",
+      "intent": "search_product",
+      "category": "kurta",
+      "color": "blue",
+      "predicted": {
+        "intent": "search_product",
+        "language": "roman-urdu",
+        "slots": {
+          "category": "kurta",
+          "color": "blue",
+          "quantity": 1,
+          "maxPrice": null
+        },
+        "normalized": "mujhe blue kurta dikhao"
+      },
+      "intentCorrect": true,
+      "categoryCorrect": true,
+      "colorCorrect": true
+    },
+    {
+      "text": "safed dupatta chahiye",
+      "intent": "search_product",
+      "category": "dupatta",
+      "color": "white",
+      "predicted": {
+        "intent": "search_product",
+        "language": "roman-urdu",
+        "slots": {
+          "category": "dupatta",
+          "color": "white",
+          "quantity": 1,
+          "maxPrice": null
+        },
+        "normalized": "safed dupatta chahiye"
+      },
+      "intentCorrect": true,
+      "categoryCorrect": true,
+      "colorCorrect": true
+    },
+    {
+      "text": "مجھے سرخ جوتے دکھاؤ",
+      "intent": "search_product",
+      "category": "shoes",
+      "color": "red",
+      "predicted": {
+        "intent": "search_product",
+        "language": "urdu",
+        "slots": {
+          "category": "shoes",
+          "color": "red",
+          "quantity": 1,
+          "maxPrice": null
+        },
+        "normalized": "مجھے سرخ جوتے دکھاؤ"
+      },
+      "intentCorrect": true,
+      "categoryCorrect": true,
+      "colorCorrect": true
+    },
+    {
+      "text": "cart mein 2 kurta add karo",
+      "intent": "add_to_cart",
+      "category": "kurta",
+      "color": null,
+      "predicted": {
+        "intent": "add_to_cart",
+        "language": "code-switched",
+        "slots": {
+          "category": "kurta",
+          "color": null,
+          "quantity": 2,
+          "maxPrice": null
+        },
+        "normalized": "cart mein 2 kurta add karo"
+      },
+      "intentCorrect": true,
+      "categoryCorrect": true,
+      "colorCorrect": true
+    },
+    {
+      "text": "add black watch to cart",
+      "intent": "add_to_cart",
+      "category": "watch",
+      "color": "black",
+      "predicted": {
+        "intent": "add_to_cart",
+        "language": "english",
+        "slots": {
+          "category": "watch",
+          "color": "black",
+          "quantity": 1,
+          "maxPrice": null
+        },
+        "normalized": "add black watch to cart"
+      },
+      "intentCorrect": true,
+      "categoryCorrect": true,
+      "colorCorrect": true
+    },
+    {
+      "text": "red shoes remove karo",
+      "intent": "remove_from_cart",
+      "category": "shoes",
+      "color": "red",
+      "predicted": {
+        "intent": "remove_from_cart",
+        "language": "code-switched",
+        "slots": {
+          "category": "shoes",
+          "color": "red",
+          "quantity": 1,
+          "maxPrice": null
+        },
+        "normalized": "red shoes remove karo"
+      },
+      "intentCorrect": true,
+      "categoryCorrect": true,
+      "colorCorrect": true
+    },
+    {
+      "text": "mera cart dikhao",
+      "intent": "view_cart",
+      "category": null,
+      "color": null,
+      "predicted": {
+        "intent": "view_cart",
+        "language": "code-switched",
+        "slots": {
+          "category": null,
+          "color": null,
+          "quantity": 1,
+          "maxPrice": null
+        },
+        "normalized": "mera cart dikhao"
+      },
+      "intentCorrect": true,
+      "categoryCorrect": true,
+      "colorCorrect": true
+    },
+    {
+      "text": "show my cart",
+      "intent": "view_cart",
+      "category": null,
+      "color": null,
+      "predicted": {
+        "intent": "view_cart",
+        "language": "english",
+        "slots": {
+          "category": null,
+          "color": null,
+          "quantity": 1,
+          "maxPrice": null
+        },
+        "normalized": "show my cart"
+      },
+      "intentCorrect": true,
+      "categoryCorrect": true,
+      "colorCorrect": true
+    },
+    {
+      "text": "yes place order",
+      "intent": "confirm_order",
+      "category": null,
+      "color": null,
+      "predicted": {
+        "intent": "confirm_order",
+        "language": "english",
+        "slots": {
+          "category": null,
+          "color": null,
+          "quantity": 1,
+          "maxPrice": null
+        },
+        "normalized": "yes place order"
+      },
+      "intentCorrect": true,
+      "categoryCorrect": true,
+      "colorCorrect": true
+    },
+    {
+      "text": "haan order karo",
+      "intent": "confirm_order",
+      "category": null,
+      "color": null,
+      "predicted": {
+        "intent": "confirm_order",
+        "language": "code-switched",
+        "slots": {
+          "category": null,
+          "color": null,
+          "quantity": 1,
+          "maxPrice": null
+        },
+        "normalized": "haan order karo"
+      },
+      "intentCorrect": true,
+      "categoryCorrect": true,
+      "colorCorrect": true
+    },
+    {
+      "text": "nahi cancel",
+      "intent": "cancel_order",
+      "category": null,
+      "color": null,
+      "predicted": {
+        "intent": "cancel_order",
+        "language": "roman-urdu",
+        "slots": {
+          "category": null,
+          "color": null,
+          "quantity": 1,
+          "maxPrice": null
+        },
+        "normalized": "nahi cancel"
+      },
+      "intentCorrect": true,
+      "categoryCorrect": true,
+      "colorCorrect": true
+    },
+    {
+      "text": "show me bag under 6000",
+      "intent": "search_product",
+      "category": "bag",
+      "color": null,
+      "predicted": {
+        "intent": "search_product",
+        "language": "english",
+        "slots": {
+          "category": "bag",
+          "color": null,
+          "quantity": 1,
+          "maxPrice": 6000
+        },
+        "normalized": "show me bag under 6000"
+      },
+      "intentCorrect": true,
+      "categoryCorrect": true,
+      "colorCorrect": true
+    },
+    {
+      "text": "کالی واچ کارٹ میں ڈالو",
+      "intent": "add_to_cart",
+      "category": "watch",
+      "color": "black",
+      "predicted": {
+        "intent": "add_to_cart",
+        "language": "urdu",
+        "slots": {
+          "category": "watch",
+          "color": "black",
+          "quantity": 1,
+          "maxPrice": null
+        },
+        "normalized": "کالی واچ کارٹ میں ڈالو"
+      },
+      "intentCorrect": true,
+      "categoryCorrect": true,
+      "colorCorrect": true
+    },
+    {
+      "text": "brown bag dikhao under 6000",
+      "intent": "search_product",
+      "category": "bag",
+      "color": "brown",
+      "predicted": {
+        "intent": "search_product",
+        "language": "code-switched",
+        "slots": {
+          "category": "bag",
+          "color": "brown",
+          "quantity": 1,
+          "maxPrice": 6000
+        },
+        "normalized": "brown bag dikhao under 6000"
+      },
+      "intentCorrect": true,
+      "categoryCorrect": true,
+      "colorCorrect": true
+    },
+    {
+      "text": "add 3 red shoes",
+      "intent": "add_to_cart",
+      "category": "shoes",
+      "color": "red",
+      "predicted": {
+        "intent": "add_to_cart",
+        "language": "english",
+        "slots": {
+          "category": "shoes",
+          "color": "red",
+          "quantity": 3,
+          "maxPrice": null
+        },
+        "normalized": "add 3 red shoes"
+      },
+      "intentCorrect": true,
+      "categoryCorrect": true,
+      "colorCorrect": true
+    },
+    {
+      "text": "white dupatta cart mein rakho",
+      "intent": "add_to_cart",
+      "category": "dupatta",
+      "color": "white",
+      "predicted": {
+        "intent": "add_to_cart",
+        "language": "code-switched",
+        "slots": {
+          "category": "dupatta",
+          "color": "white",
+          "quantity": 1,
+          "maxPrice": null
+        },
+        "normalized": "white dupatta cart mein rakho"
+      },
+      "intentCorrect": true,
+      "categoryCorrect": true,
+      "colorCorrect": true
+    },
+    {
+      "text": "remove black headphones",
+      "intent": "remove_from_cart",
+      "category": "headphones",
+      "color": "black",
+      "predicted": {
+        "intent": "remove_from_cart",
+        "language": "english",
+        "slots": {
+          "category": "headphones",
+          "color": "black",
+          "quantity": 1,
+          "maxPrice": null
+        },
+        "normalized": "remove black headphones"
+      },
+      "intentCorrect": true,
+      "categoryCorrect": true,
+      "colorCorrect": true
+    },
+    {
+      "text": "show blue shoes",
+      "intent": "search_product",
+      "category": "shoes",
+      "color": "blue",
+      "predicted": {
+        "intent": "search_product",
+        "language": "english",
+        "slots": {
+          "category": "shoes",
+          "color": "blue",
+          "quantity": 1,
+          "maxPrice": null
+        },
+        "normalized": "show blue shoes"
+      },
+      "intentCorrect": true,
+      "categoryCorrect": true,
+      "colorCorrect": true
+    },
+    {
+      "text": "laal jootay paanch hazar ke andar",
+      "intent": "search_product",
+      "category": "shoes",
+      "color": "red",
+      "predicted": {
+        "intent": "search_product",
+        "language": "roman-urdu",
+        "slots": {
+          "category": "shoes",
+          "color": "red",
+          "quantity": 5,
+          "maxPrice": 5000
+        },
+        "normalized": "laal jootay paanch hazar ke andar"
+      },
+      "intentCorrect": true,
+      "categoryCorrect": true,
+      "colorCorrect": true
+    },
+    {
+      "text": "neelay kurte add karo",
+      "intent": "add_to_cart",
+      "category": "kurta",
+      "color": "blue",
+      "predicted": {
+        "intent": "add_to_cart",
+        "language": "code-switched",
+        "slots": {
+          "category": "kurta",
+          "color": "blue",
+          "quantity": 1,
+          "maxPrice": null
+        },
+        "normalized": "neelay kurte add karo"
+      },
+      "intentCorrect": true,
+      "categoryCorrect": true,
+      "colorCorrect": true
+    },
+    {
+      "text": "cheap joggers dikhao",
+      "intent": "search_product",
+      "category": "shoes",
+      "color": null,
+      "predicted": {
+        "intent": "search_product",
+        "language": "roman-urdu",
+        "slots": {
+          "category": "shoes",
+          "color": null,
+          "quantity": 1,
+          "maxPrice": null
+        },
+        "normalized": "cheap joggers dikhao"
+      },
+      "intentCorrect": true,
+      "categoryCorrect": true,
+      "colorCorrect": true
+    },
+    {
+      "text": "mujhe earphones chahiye",
+      "intent": "search_product",
+      "category": "headphones",
+      "color": null,
+      "predicted": {
+        "intent": "search_product",
+        "language": "roman-urdu",
+        "slots": {
+          "category": "headphones",
+          "color": null,
+          "quantity": 1,
+          "maxPrice": null
+        },
+        "normalized": "mujhe earphones chahiye"
+      },
+      "intentCorrect": true,
+      "categoryCorrect": true,
+      "colorCorrect": true
+    },
+    {
+      "text": "remove my last item",
+      "intent": "remove_from_cart",
+      "category": null,
+      "color": null,
+      "predicted": {
+        "intent": "remove_from_cart",
+        "language": "english",
+        "slots": {
+          "category": null,
+          "color": null,
+          "quantity": 1,
+          "maxPrice": null
+        },
+        "normalized": "remove my last item"
+      },
+      "intentCorrect": true,
+      "categoryCorrect": true,
+      "colorCorrect": true
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+% Generated paper figure representing the verified prototype state.
+\begin{tikzpicture}[
+  font=\scriptsize,
+  panel/.style={draw=black!25, rounded corners=2pt, fill=white, minimum width=0.94\columnwidth},
+  label/.style={font=\bfseries\scriptsize},
+  chip/.style={draw=black!18, rounded corners=2pt, fill=black!3, inner sep=2pt}
+]
+\node[panel, minimum height=1.1cm, anchor=north west] (top) at (0,0) {};
+\node[anchor=west, label] at (0.15,-0.25) {Bilingual Voice Shopping Assistant};
+\node[anchor=west] at (0.15,-0.55) {Command: ``mujhe blue kurta dikhao''};
+\node[chip, anchor=east] at (6.65,-0.32) {roman-urdu};
+
+\node[panel, minimum height=1.55cm, anchor=north west] (response) at (0,-1.32) {};
+\node[anchor=west, label] at (0.15,-1.58) {System Response};
+\node[anchor=west, text width=6.25cm] at (0.15,-1.93) {I found 1 matching item. The best option is Blue Cotton Kurta for PKR 2,490.};
+\node[chip, anchor=west] at (0.15,-2.45) {Intent: search\_product};
+\node[chip, anchor=west] at (2.35,-2.45) {Product: kurta};
+\node[chip, anchor=west] at (4.15,-2.45) {Color: blue};
+
+\node[panel, minimum height=1.45cm, minimum width=3.25cm, anchor=north west] at (0,-3.15) {};
+\node[anchor=west, label] at (0.15,-3.40) {Product Result};
+\node[anchor=west] at (0.15,-3.75) {Blue Cotton Kurta};
+\node[anchor=west] at (0.15,-4.05) {PKR 2,490 · rating 4.6};
+
+\node[panel, minimum height=1.45cm, minimum width=3.25cm, anchor=north east] at (6.7,-3.15) {};
+\node[anchor=west, label] at (3.65,-3.40) {Cart};
+\node[anchor=west] at (3.65,-3.75) {No items yet};
+\node[anchor=west] at (3.65,-4.05) {Next: add kurta to cart};
+\end{tikzpicture}
+

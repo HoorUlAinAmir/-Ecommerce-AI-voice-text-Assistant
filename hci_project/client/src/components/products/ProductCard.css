@@ -1,0 +1,177 @@
+.product-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-sm);
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.product-card--out {
+  opacity: 0.68;
+}
+
+/* Media section */
+.product-card__media {
+  position: relative;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 14px 14px;
+}
+
+.product-card__emoji {
+  font-size: 3rem;
+  line-height: 1;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.25));
+}
+
+.product-card__badges {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.product-card__category-badge,
+.product-card__low-stock,
+.product-card__out-badge {
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.product-card__category-badge {
+  background: rgba(0,0,0,0.28);
+  color: rgba(255,255,255,0.92);
+  backdrop-filter: blur(4px);
+}
+
+.product-card__low-stock {
+  background: rgba(255, 152, 0, 0.85);
+  color: #fff;
+}
+
+.product-card__out-badge {
+  background: rgba(198, 40, 40, 0.82);
+  color: #fff;
+}
+
+.product-card__color-dot {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.6);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+}
+
+/* Body */
+.product-card__body {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.product-card__name {
+  font-size: 0.93rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.3;
+  margin: 0;
+}
+
+.product-card__urdu {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin: 0;
+  font-family: 'Noto Nastaliq Urdu', serif;
+  direction: rtl;
+  text-align: right;
+  line-height: 1.8;
+}
+
+/* Stars */
+.product-stars {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.product-stars__val {
+  margin-left: 4px;
+  font-size: 0.72rem;
+  font-weight: 650;
+  color: var(--muted);
+}
+
+/* Meta */
+.product-card__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.product-card__price {
+  font-size: 1rem;
+  font-weight: 750;
+  color: var(--gold);
+}
+
+.product-card__color-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: var(--radius-full);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--muted);
+  text-transform: capitalize;
+}
+
+/* Add button */
+.product-card__add {
+  margin-top: auto;
+  width: 100%;
+  height: 38px;
+  border-radius: var(--radius-sm);
+  background: var(--teal);
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 680;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background var(--transition), box-shadow var(--transition);
+}
+
+.product-card__add:hover:not(:disabled) {
+  background: var(--teal-dark);
+  box-shadow: var(--shadow-teal-sm);
+}
+
+.product-card__add:disabled {
+  background: #b0bec5;
+  cursor: not-allowed;
+}

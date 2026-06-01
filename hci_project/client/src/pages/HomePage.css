@@ -1,0 +1,142 @@
+.home-page {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ── Hero Band ──────────────────────────────── */
+.hero-band {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  margin-top: 22px;
+  overflow: hidden;
+}
+
+.hero-band::before {
+  content: "";
+  display: block;
+  height: 4px;
+  background: linear-gradient(90deg, var(--teal) 0%, var(--gold) 50%, var(--teal) 100%);
+}
+
+.hero-band__inner {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 28px;
+  align-items: center;
+  padding: 28px 28px 24px;
+}
+
+.hero-band__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+}
+
+.hero-band__heading {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hero-band__title {
+  font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.hero-band__title-ur {
+  font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+  color: var(--teal);
+  font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
+  font-weight: 700;
+}
+
+.hero-band__sub {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* ── Main layout ────────────────────────────── */
+.home-main {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 20px;
+  align-items: start;
+}
+
+.home-main__left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.home-main__right {
+  position: sticky;
+  top: 80px;
+}
+
+/* Mobile cart FAB */
+.cart-fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 200;
+  padding: 12px 20px;
+  border-radius: var(--radius-full);
+  background: var(--teal);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  box-shadow: var(--shadow-teal);
+  border: none;
+  cursor: pointer;
+  transition: background var(--transition), box-shadow var(--transition);
+}
+
+.cart-fab:hover {
+  background: var(--teal-dark);
+  box-shadow: 0 10px 36px rgba(0, 105, 92, 0.5);
+}
+
+/* ── Responsive ────────────────────────────── */
+@media (max-width: 1040px) {
+  .home-main {
+    grid-template-columns: 1fr;
+  }
+  .home-main__right {
+    position: static;
+  }
+  .home-main__right:not(.home-main__right--open) {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .hero-band__inner {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+    text-align: center;
+  }
+  .hero-band__heading {
+    justify-content: center;
+  }
+  .home-page { padding: 0 12px 32px; }
+}

@@ -1,0 +1,53 @@
+.samples {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+  margin-top: 12px;
+}
+
+.samples__label {
+  font-size: 0.72rem;
+  font-weight: 650;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.sample-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 11px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: var(--surface-2);
+  cursor: pointer;
+  transition: background var(--transition), border-color var(--transition), box-shadow var(--transition);
+}
+
+.sample-chip:hover {
+  background: var(--teal-light);
+  border-color: var(--teal);
+  box-shadow: var(--shadow-xs);
+}
+
+.sample-chip__en {
+  font-size: 0.78rem;
+  font-weight: 550;
+  color: var(--ink-2);
+}
+
+.sample-chip:hover .sample-chip__en {
+  color: var(--teal-dark);
+}
+
+.sample-chip__ur {
+  font-size: 0.72rem;
+  color: var(--muted);
+  font-family: 'Noto Nastaliq Urdu', serif;
+  direction: rtl;
+  border-left: 1px solid var(--border);
+  padding-left: 6px;
+}

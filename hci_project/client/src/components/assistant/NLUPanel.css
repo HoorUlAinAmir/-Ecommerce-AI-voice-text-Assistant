@@ -1,0 +1,45 @@
+.nlu-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nlu-panel__label {
+  font-size: 0.7rem;
+  font-weight: 680;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--muted-2);
+}
+
+.nlu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.nlu-pill {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 7px 12px;
+  border-radius: var(--radius-sm);
+  min-width: 72px;
+}
+
+.nlu-pill__label {
+  font-size: 0.65rem;
+  font-weight: 650;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.nlu-pill__value {
+  font-size: 0.82rem;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 120px;
+}

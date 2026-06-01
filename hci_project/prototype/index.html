@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bilingual Voice Shopping Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="workspace" aria-label="Assistant workspace">
+        <div class="topbar">
+          <div>
+            <p class="eyebrow">HCI CP3 Prototype</p>
+            <h1>Bilingual Voice Shopping Assistant</h1>
+          </div>
+          <div class="status" id="speechStatus">Text mode ready</div>
+        </div>
+
+        <section class="assistant-panel" aria-label="Voice assistant">
+          <div class="orb" aria-hidden="true">
+            <span></span>
+          </div>
+          <div class="transcript">
+            <p class="label">Latest command</p>
+            <p id="transcriptText">Try: “mujhe blue kurta dikhao”</p>
+          </div>
+          <div class="controls">
+            <input id="commandInput" type="text" autocomplete="off" placeholder="Type or speak a bilingual shopping command">
+            <button id="micButton" class="icon-button" title="Start voice input" aria-label="Start voice input">Mic</button>
+            <button id="sendButton">Send</button>
+          </div>
+          <div class="chips" aria-label="Sample commands">
+            <button data-sample="show me red shoes under 5000">red shoes</button>
+            <button data-sample="mujhe blue kurta dikhao">blue kurta</button>
+            <button data-sample="cart mein 2 kurta add karo">add kurta</button>
+            <button data-sample="mera cart dikhao">view cart</button>
+          </div>
+        </section>
+
+        <section class="grid">
+          <article class="panel">
+            <div class="panel-head">
+              <h2>System Response</h2>
+              <span id="languagePill">language</span>
+            </div>
+            <p id="assistantResponse">The assistant response will appear here.</p>
+            <dl class="nlu">
+              <div><dt>Intent</dt><dd id="intentValue">none</dd></div>
+              <div><dt>Color</dt><dd id="colorValue">none</dd></div>
+              <div><dt>Product</dt><dd id="categoryValue">none</dd></div>
+              <div><dt>Max price</dt><dd id="priceValue">none</dd></div>
+            </dl>
+          </article>
+
+          <article class="panel">
+            <div class="panel-head">
+              <h2>Cart</h2>
+              <span id="cartTotal">PKR 0</span>
+            </div>
+            <ul id="cartList" class="cart-list">
+              <li class="empty">No items yet</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2>Product Results</h2>
+            <span id="resultCount">0 items</span>
+          </div>
+          <div id="productGrid" class="products"></div>
+        </section>
+      </section>
+    </main>
+
+    <script src="../src/assistant-core.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
